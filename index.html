@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+   
+
+    <title> Simon Game</title>
+
+    <!-- css  -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- icon -->
+    <link rel="icon" href="image/favicon.ico">
+
+
+
+</head>
+<body>
+    <h1>Press any key to start</h1>
+
+    
+    <div class="welcome">
+      <h4>Hi Friends, Welcome To my Simon game. </h4>
+      <button class="start-game">Start game</button>
+      <br>
+      <button class="btn-rules"> rules</button>
+      <section  class="game-rules">
+      Game Rules.
+     <span class="desktop-rule"> Press any key on the keyboard to start the game. </span> 
+      If you start the game, you can see a button that flashes in a moment with the sound.
+      You need to click that button. You pass the first level and then see another random button flash in the next second.
+      You need to memorize the pattern and click orderly. 
+      <br>
+      
+        <a href="https://www.linkedin.com/in/anandrp2030/">Connect Me <img src="image/linkedin logo.jpg" class="logo" alt="linkedin logo"> </a>
+    </section>
+    
+    </div>
+
+    
+
+    <table class="container">
+      <tr>
+        <td> <div class="green btn" id="green"></div> </td>
+        <td> <div class="red btn" id="red"></div> </td> 
+      </tr>
+
+      <tr>
+        <td> <div class="yellow btn" id="yellow"></div> </td> 
+        <td> <div class="blue btn" id="blue"></div> </td> 
+      </tr>
+      
+    
+    </table>
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- javascript -->
+    <script src="game.js"></script>
+    
+</body>
+</html>

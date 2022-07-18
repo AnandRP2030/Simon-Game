@@ -1,0 +1,158 @@
+body{
+    background-color:lightcyan;
+    text-align:center;
+    margin:auto;
+    font-family:sans-serif;
+
+}
+h1{
+    font-family:'press start 2p',cursive;
+    color:#F2DF3A;
+    text-shadow: 2px 2px black;
+}
+.container{
+    margin:auto;
+}
+
+.container div { /* combine selectors */
+    width:200px;
+    height:200px;
+    border:solid #edf1f3 15px;
+    border-radius:20px;
+    margin:5px;
+    float:left;
+}
+
+.green{
+    background-color:greenyellow;
+}
+.red{
+    background-color:red;
+
+}
+.blue{
+    background-color:blue;
+}
+
+.yellow{
+    background-color:yellow;
+}
+
+.pressed {
+    box-shadow: 5px 5px rgb(99, 129, 55);
+}
+
+.wrong{
+    background-color: red;
+}
+
+.game-rules {
+    opacity:0.3;
+    position:relative;
+    padding:15px;
+    visibility:hidden;
+    text-align:left;
+    float:left;
+}
+
+.showRule{
+    visibility: visible;
+}
+
+.game-rules:hover{
+    opacity:0.8;
+}
+
+.welcome{
+    width:237px;
+    text-align:center;
+    margin-left:15px;
+    position:absolute;
+   
+}
+
+.btn-rules{
+    color:rgb(255, 255, 255);
+    background-color: darkturquoise;
+    text-align:center;
+    position:relative;
+    border: white;
+    border-radius: 4px;
+    opacity: .5;
+    
+}
+.welcome>button:hover{
+    opacity:1;
+}
+
+.logo{
+    height:20px;
+    width:20px;
+}
+
+.game-rules>a{
+    text-decoration:none;
+    color:#3230d2;
+}
+.start-game{
+    visibility: hidden;
+}
+/* Responsiveness */
+
+@media ( max-width:600px) and (min-width:200px ) {
+
+    body{ 
+        text-align:center;
+        margin:0;
+    }
+
+    h1{
+        font-size:20px;
+        line-height: 1.5;
+        text-align:center;
+    }
+
+    .welcome{
+        position:relative;
+        text-align:center;
+        margin:auto;
+    }
+   
+    .container div{
+        height:100px;
+        width:100px;
+    }
+
+    .game-rules {
+     position: absolute;
+     top: 433px;
+     text-align: left;
+     margin: 0;
+     width: 234px;
+     left: -27px;
+    }
+
+    .btn-rules{
+        position:absolute;
+        top:408px;
+        left: 65px;
+        width: 99px;
+    }
+
+    .start-game{
+        visibility: visible;
+        color: rgb(0, 0, 0);
+        background-color: #F2DF3A;
+        position: absolute;
+        top: 373px;
+        left: 74px;
+        border-color: white;
+    }
+    
+    .desktop-rule{
+        visibility: hidden;
+    }
+
+    
+
+}
